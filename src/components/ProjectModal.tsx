@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { PROJECTS } from "@/data/projects";
 import Image from "next/image";
-import { ArrowLeft, ExternalLink, Github, MonitorPlay } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
@@ -242,7 +242,7 @@ export function ProjectModal({ projectId, onClose, onSelectProject }: ProjectMod
 
                     <div className="mt-32 flex flex-col items-start gap-10">
                       <h4 className="text-xs tracking-[0.5em] text-zinc-400 uppercase">
-                        LET'S WORK TOGETHER
+                        LET&apos;S WORK TOGETHER
                       </h4>
 
                       <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-xs md:text-xs font-medium font-[Arial,Helvetica,sans-serif]">

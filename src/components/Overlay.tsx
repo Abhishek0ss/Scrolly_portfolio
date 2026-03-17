@@ -3,6 +3,14 @@
 import { motion, MotionValue, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 
+// Typewriter phrases
+const phrases = [
+  "AI / ML Engineer",
+  "Machine Learning Engineer",
+  "Building data-driven systems",
+  "Computer Vision Enthusiast"
+];
+
 export function Overlay({ scrollYProgress }: { scrollYProgress: MotionValue<number> }) {
 
   // Scroll animations
@@ -16,13 +24,7 @@ export function Overlay({ scrollYProgress }: { scrollYProgress: MotionValue<numb
   const opacity3 = useTransform(scrollYProgress, [0.6, 0.7, 0.85, 0.95], [0, 1, 1, 0]);
   const y3 = useTransform(scrollYProgress, [0.6, 0.95], [50, -50]);
 
-  // Typewriter phrases
-  const phrases = [
-    "AI / ML Engineer",
-    "Machine Learning Engineer",
-    "Building data-driven systems",
-    "Computer Vision Enthusiast"
-  ];
+
 
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);

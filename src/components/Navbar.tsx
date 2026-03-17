@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion } from "framer-motion";
 
 const LINKS = [
   { name: "Home", href: "#home" },
@@ -13,14 +13,9 @@ const LINKS = [
 ];
 
 export function Navbar() {
-  const { scrollYProgress } = useScroll();
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Hide the navbar when scrolling down, show when scrolling up
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    
-  });
 
   useEffect(() => {
     const handleScroll = () => {

@@ -41,7 +41,7 @@ export function Connect() {
              transition={{ duration: 0.6 }}
              className="text-5xl md:text-8xl font-black text-white tracking-tighter uppercase mb-6"
           >
-            Let's <span className="text-zinc-500">Connect</span>
+            Let&apos;s <span className="text-zinc-500">Connect</span>
           </motion.h3>
           <motion.p 
              initial={{ opacity: 0, y: 30 }}

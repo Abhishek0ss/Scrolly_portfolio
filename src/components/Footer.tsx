@@ -16,7 +16,7 @@ export function Footer() {
         </h2>
         
         <p className="text-zinc-400 text-sm md:text-base max-w-2xl mb-8">
-          I'm always excited to work on new projects, explore internship opportunities, and collaborate with amazing people. Let's build something great together.
+          I&apos;m always excited to work on new projects, explore internship opportunities, and collaborate with amazing people. Let&apos;s build something great together.
         </p>
         
         <div className="flex items-center justify-center gap-4 mb-8">

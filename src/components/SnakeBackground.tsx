@@ -22,7 +22,7 @@ export function SnakeBackground() {
     ];
 
     let direction = { x: gridSize, y: 0 };
-    let food = { x: 0, y: 0 };
+    const food = { x: 0, y: 0 };
 
     let manualMode = false;
     let manualTimeout: ReturnType<typeof setTimeout>;
@@ -98,11 +98,11 @@ export function SnakeBackground() {
     };
 
     const update = () => {
-      let head = { x: snake[0].x, y: snake[0].y };
+      const head = { x: snake[0].x, y: snake[0].y };
 
       if (!manualMode) {
-        let dx = food.x - head.x;
-        let dy = food.y - head.y;
+        const dx = food.x - head.x;
+        const dy = food.y - head.y;
 
         if (Math.abs(dx) > Math.abs(dy)) {
           if (dx > 0 && direction.x === 0) direction = { x: gridSize, y: 0 };
@@ -168,7 +168,7 @@ export function SnakeBackground() {
       ctx.shadowColor = "#b9eae4ff";
 
       for (let i = 0; i < snake.length; i++) {
-        let alpha = 1 - i / (snake.length + 5);
+        const alpha = 1 - i / (snake.length + 5);
 
         ctx.fillStyle = `rgba(34, 211, 238, ${Math.max(0.4, alpha)})`;
 

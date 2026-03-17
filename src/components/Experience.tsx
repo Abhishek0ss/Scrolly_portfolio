@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { Award, BookOpen, GraduationCap, ExternalLink } from "lucide-react";
-import { title } from "process";
 
 const CERTIFICATIONS = [
   { title: "Oracle Database and AWS Architect Professional", provider: "Oracle", date: "Oct 25", link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=AC77E38F528734C02D5AAFCEFB583C6A287DC59992B8CCA9E985A39A8C78DE8C" },

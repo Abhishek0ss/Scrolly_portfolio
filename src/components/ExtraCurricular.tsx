@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -156,10 +157,11 @@ export function ExtraCurricular() {
                 >
                   <div className="relative w-full h-[55%] p-3 pb-0">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gray-200">
-                      <img
+                      <Image
                         src={activity.image}
                         alt={activity.title}
-                        className="w-full h-full object-cover pointer-events-none"
+                        fill
+                        className="object-cover pointer-events-none"
                       />
                     </div>
                   </div>
