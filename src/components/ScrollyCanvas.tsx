@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 import { Overlay } from "./Overlay";
 
@@ -54,7 +54,7 @@ export function ScrollyCanvas() {
   }, []);
 
 
-  const renderFrame = (index: number) => {
+  const renderFrame = useCallback((index: number) => {
     if (!imagesLoaded || !canvasRef.current) return;
 
     const canvas = canvasRef.current;
@@ -84,7 +84,7 @@ export function ScrollyCanvas() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
-  };
+  }, [images, imagesLoaded]);
 
   // -------------------------------
   // Scroll → frame sync (optimized)
@@ -132,7 +132,7 @@ export function ScrollyCanvas() {
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
-  }, [imagesLoaded, scrollYProgress]);
+  }, [imagesLoaded, scrollYProgress, renderFrame]);
 
   // -------------------------------
   // Initial frame render
@@ -141,7 +141,7 @@ export function ScrollyCanvas() {
     if (imagesLoaded) {
       renderFrame(0);
     }
-  }, [imagesLoaded]);
+  }, [imagesLoaded, renderFrame]);
 
   return (
     <div ref={containerRef} id="home" className="relative h-[500vh] w-full bg-[#121212]">
