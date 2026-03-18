@@ -88,13 +88,11 @@ const ACHIEVEMENTS = [
 ];
 
 export function Experience() {
-  const scrollItems = [...CERTIFICATIONS, ...CERTIFICATIONS, ...CERTIFICATIONS];
 
   return (
     <section id="certifications" className="w-full bg-[#121212] py-24 px-6 md:px-12 border-t border-white/5 relative z-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         
-        {/* Left Column: Training & Achievements */}
         <div className="flex flex-col space-y-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
