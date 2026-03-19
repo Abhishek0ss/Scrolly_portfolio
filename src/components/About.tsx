@@ -40,7 +40,7 @@ export function About() {
             transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
             style={{ backgroundSize: "200% auto" }}
           >
-            "Data is a precious thing and will last longer than the systems themselves."
+            &ldquo;Data is a precious thing and will last longer than the systems themselves.&rdquo;
           </motion.h3>
           
           <p className="text-zinc-400 text-lg md:text-xl font-medium tracking-wide">
