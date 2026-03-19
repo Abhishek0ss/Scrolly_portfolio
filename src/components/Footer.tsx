@@ -1,5 +1,5 @@
 "use client";
-import { Github, Linkedin, Instagram, Heart, ArrowUp } from "lucide-react";
+import { Github, Linkedin, X, Heart, ArrowUp } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -39,14 +39,11 @@ export function Footer() {
             target="_blank"
             className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#202020] hover:bg-[#2a2a2a] transition-colors border border-white/5"
           >
-            {/* The screenshot has an Instagram icon, but X or an Instagram icon could be here. I'll use Instagram as a placeholder or X if preferred. I'll stick close to the screenshot's icon setup but adapt to Abhishek S S */}
-            <Instagram className="w-5 h-5 text-zinc-200 hover:text-white transition-colors" />
+            <X className="w-5 h-5 text-zinc-200 hover:text-white transition-colors" />
           </Link>
         </div>
         
-        <div className="flex items-center gap-2 text-zinc-200 text-sm font-medium mb-12">
-          Made with <Heart className="w-4 h-4 text-[#e67e51] fill-transparent" /> by Abhishek S S
-        </div>
+
 
         {/* Bottom bar */}
         <div className="w-full pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-zinc-300">
