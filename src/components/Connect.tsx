@@ -41,14 +41,14 @@ export function Connect() {
              transition={{ duration: 0.6 }}
              className="text-5xl md:text-8xl font-black text-white tracking-tighter uppercase mb-6"
           >
-            Let&apos;s <span className="text-zinc-500">Connect</span>
+            Let&apos;s <span className="text-zinc-300">Connect</span>
           </motion.h3>
           <motion.p 
              initial={{ opacity: 0, y: 30 }}
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
              transition={{ duration: 0.6, delay: 0.1 }}
-             className="text-xl md:text-xl text-zinc-400 font-light"
+             className="text-xl md:text-xl text-zinc-200 font-light"
           >
             Open to opportunities in Machine Learning, Statistical Analysis, and Software Development.
           </motion.p>
@@ -68,7 +68,7 @@ export function Connect() {
             transition={{ duration: 0.6, delay: idx * 0.1 }}
             className="group flex flex-col justify-between h-40 p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:bg-white/[0.05] hover:border-white/30 transition-all duration-300 relative overflow-hidden"
           >
-            <div className="flex justify-between items-start text-zinc-500 group-hover:text-white transition-colors relative z-10">
+            <div className="flex justify-between items-start text-zinc-300 group-hover:text-white transition-colors relative z-10">
               <span className="font-mono text-xs font-bold tracking-widest uppercase">{social.platform}</span>
               {social.icon}
             </div>

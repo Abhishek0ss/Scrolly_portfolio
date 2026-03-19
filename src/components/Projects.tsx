@@ -74,7 +74,7 @@ export function Projects() {
                         damping: 30, 
                         mass: 0.5 
                       }}
-                      className="absolute top-0 left-0 w-20 h-20 rounded-full bg-transparent border border-cyan-500/50 backdrop-blur-sm text-white flex items-center justify-center font-bold tracking-widest uppercase text-sm pointer-events-none z-20 shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+                      className="absolute top-0 left-0 w-24 h-24 rounded-full bg-black/40 border border-white/10 backdrop-blur-lg text-white flex items-center justify-center font-medium tracking-[0.25em] uppercase text-sm pointer-events-none z-20 shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
                     >
                       View
                     </motion.div>
@@ -91,7 +91,7 @@ export function Projects() {
                 </div>
                 
                 <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-2 tracking-tight">
-                  <button onClick={() => setSelectedProject(proj.id)} className="text-left hover:text-cyan-400 transition-colors">
+                  <button onClick={() => setSelectedProject(proj.id)} className="text-left hover:text-cyan-300 transition-colors">
                     {proj.title}
                   </button>
                 </h3>
@@ -111,7 +111,7 @@ export function Projects() {
                   {proj.tech.split(",").map((techName, i) => (
                     <span 
                       key={i} 
-                      className="px-4 py-2 rounded-full border border-zinc-700 text-xs md:text-sm font-medium text-zinc-300 hover:border-cyan-500 hover:text-cyan-400 hover:shadow-[0_0_12px_rgba(6,182,212,0.4)] transition-all bg-[#0a0a0a] cursor-default"
+                      className="px-4 py-2 rounded-full border border-zinc-700 text-xs md:text-sm font-medium text-zinc-300 hover:border-cyan-500 hover:text-cyan-300 hover:shadow-[0_0_12px_rgba(6,182,212,0.4)] transition-all bg-[#0a0a0a] cursor-default"
                     >
                       {techName.trim()}
                     </span>
@@ -121,7 +121,7 @@ export function Projects() {
                 {/* Vertical "PROJECTS" Tag */}
                 <div className="absolute -right-4 lg:-right-8 top-1/2 -translate-y-1/2 hidden xl:flex items-center justify-center py-8 px-2 rounded-l-2xl border border-white/5 border-r-0 bg-[#0a0a0a]">
                   <span 
-                    className="text-cyan-600 font-mono text-xs tracking-[0.25em] font-bold uppercase group-hover:text-cyan-400 transition-colors duration-500" 
+                    className="text-cyan-300 font-mono text-xs tracking-[0.25em] font-bold uppercase group-hover:text-cyan-300 transition-colors duration-500" 
                     style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
                   >
                     Projects

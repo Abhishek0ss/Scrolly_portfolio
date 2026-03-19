@@ -151,7 +151,7 @@ export function ScrollyCanvas() {
         {!imagesLoaded && (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-50 bg-[#121212]">
             <div className="w-12 h-12 border-4 border-zinc-800 border-t-white rounded-full animate-spin"></div>
-            <p className="mt-6 text-zinc-400 font-mono text-sm tracking-widest uppercase">
+            <p className="mt-6 text-zinc-200 font-mono text-sm tracking-widest uppercase">
               Initializing...
             </p>
           </div>

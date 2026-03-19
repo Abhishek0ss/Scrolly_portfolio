@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 
 // Typewriter phrases
 const phrases = [
-  "AI / ML Engineer",
-  "Machine Learning Engineer",
+  "Engineering Intelligent Systems",
+  "Driven by Precision",
   "Building data-driven systems",
   "Computer Vision Enthusiast",
 ];
@@ -39,7 +39,7 @@ function TypewriterText() {
   }, [text, deleting, index]);
 
   return (
-    <p className="mt-6 text-xl md:text-2xl text-zinc-300 font-light tracking-wide h-8">
+    <p className="mt-6 text-xl md:text-2xl text-zinc-100 font-[Arial] tracking-wide h-8">
       {text}
       <span className="animate-pulse">|</span>
     </p>

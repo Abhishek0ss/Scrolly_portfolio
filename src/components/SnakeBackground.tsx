@@ -165,12 +165,12 @@ export function SnakeBackground() {
 
       
       ctx.shadowBlur = 10;
-      ctx.shadowColor = "#b9eae4ff";
+      ctx.shadowColor = "#c6d2d0ff";
 
       for (let i = 0; i < snake.length; i++) {
         const alpha = 1 - i / (snake.length + 5);
 
-        ctx.fillStyle = `rgba(34, 211, 238, ${Math.max(0.4, alpha)})`;
+        ctx.fillStyle = `rgba(161, 161, 170, ${Math.max(0.4, alpha)})`;
 
         ctx.beginPath();
         ctx.arc(

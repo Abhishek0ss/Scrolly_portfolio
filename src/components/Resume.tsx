@@ -14,7 +14,7 @@ export function Resume() {
       file: "/Abhishek_SS_CV.pdf",
       show: showGeneral,
       setShow: setShowGeneral,
-      color: "text-blue-400",
+      color: "text-blue-300",
       btnColor: "bg-blue-500 hover:bg-blue-600",
       glowColor: "bg-blue-500/10",
     },
@@ -44,13 +44,13 @@ export function Resume() {
           className="flex flex-col items-center text-center mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <FileText className="w-8 h-8 text-white/50" />
+            <FileText className="w-8 h-8 text-white/90" />
             <h3 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase">
               Curriculum Vitae
             </h3>
           </div>
 
-          <p className="text-zinc-400 max-w-2xl font-light">
+          <p className="text-zinc-200 max-w-2xl font-light">
             Explore my background, professional experiences, and academic details.
           </p>
         </motion.div>

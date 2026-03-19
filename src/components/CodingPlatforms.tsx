@@ -28,9 +28,9 @@ export function CodingPlatforms() {
     <section id="platforms" className="w-full bg-[#121212] py-24 px-6 md:px-12 border-t border-white/5 relative z-20">
       <div className="max-w-7xl mx-auto">
         <h3 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tighter uppercase text-center">
-          Coding <span className="text-zinc-600">Platforms</span>
+          Coding <span className="text-zinc-300">Platforms</span>
         </h3>
-        <p className="text-center text-zinc-400 max-w-2xl mx-auto mb-16">
+        <p className="text-center text-zinc-200 max-w-2xl mx-auto mb-16">
           Proof of work on competitive programming and algorithms. Continuous learning and problem solving track record.
         </p>
         

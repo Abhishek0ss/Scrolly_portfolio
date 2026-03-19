@@ -15,7 +15,7 @@ export function Footer() {
           Thanks for visiting!
         </h2>
         
-        <p className="text-zinc-400 text-sm md:text-base max-w-2xl mb-8">
+        <p className="text-zinc-200 text-sm md:text-base max-w-2xl mb-8">
           I&apos;m always excited to work on new projects, explore internship opportunities, and collaborate with amazing people. Let&apos;s build something great together.
         </p>
         
@@ -25,14 +25,14 @@ export function Footer() {
             target="_blank"
             className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#202020] hover:bg-[#2a2a2a] transition-colors border border-white/5"
           >
-            <Github className="w-5 h-5 text-zinc-400 hover:text-white transition-colors" />
+            <Github className="w-5 h-5 text-zinc-200 hover:text-white transition-colors" />
           </Link>
           <Link 
             href="https://www.linkedin.com/in/abhishekss7/" 
             target="_blank"
             className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#202020] hover:bg-[#2a2a2a] transition-colors border border-white/5"
           >
-            <Linkedin className="w-5 h-5 text-zinc-400 hover:text-white transition-colors" />
+            <Linkedin className="w-5 h-5 text-zinc-200 hover:text-white transition-colors" />
           </Link>
           <Link 
             href="https://x.com/AbhishekSS24810" 
@@ -40,16 +40,16 @@ export function Footer() {
             className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#202020] hover:bg-[#2a2a2a] transition-colors border border-white/5"
           >
             {/* The screenshot has an Instagram icon, but X or an Instagram icon could be here. I'll use Instagram as a placeholder or X if preferred. I'll stick close to the screenshot's icon setup but adapt to Abhishek S S */}
-            <Instagram className="w-5 h-5 text-zinc-400 hover:text-white transition-colors" />
+            <Instagram className="w-5 h-5 text-zinc-200 hover:text-white transition-colors" />
           </Link>
         </div>
         
-        <div className="flex items-center gap-2 text-zinc-400 text-sm font-medium mb-12">
+        <div className="flex items-center gap-2 text-zinc-200 text-sm font-medium mb-12">
           Made with <Heart className="w-4 h-4 text-[#e67e51] fill-transparent" /> by Abhishek S S
         </div>
 
         {/* Bottom bar */}
-        <div className="w-full pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-zinc-500">
+        <div className="w-full pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-zinc-300">
           <div>
              © {new Date().getFullYear()} Abhishek S S. All rights reserved.
           </div>

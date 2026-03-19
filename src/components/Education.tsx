@@ -37,7 +37,7 @@ export function Education() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-4 mb-16"
          >
-            <GraduationCap className="w-8 h-8 text-zinc-500" />
+            <GraduationCap className="w-8 h-8 text-zinc-300" />
             <h3 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase">Education</h3>
          </motion.div>
 
@@ -57,7 +57,7 @@ export function Education() {
                     <h5 className="text-xl md:text-2xl font-bold text-white group-hover:text-blue-300 transition-colors">
                       {edu.institution}
                     </h5>
-                    <span className="text-sm font-mono text-zinc-500 tracking-wider shrink-0 mt-2 sm:mt-0">
+                    <span className="text-sm font-mono text-zinc-300 tracking-wider shrink-0 mt-2 sm:mt-0">
                       {edu.date}
                     </span>
                  </div>
@@ -66,7 +66,7 @@ export function Education() {
                     {edu.degree}
                  </p>
                  
-                 <div className="flex justify-between items-center text-zinc-400 text-sm mt-3">
+                 <div className="flex justify-between items-center text-zinc-200 text-sm mt-3">
                     <span className="bg-white/5 px-3 py-1 rounded-md border border-white/10 font-mono tracking-wide text-xs">{edu.score}</span>
                     <span className="italic">{edu.location}</span>
                  </div>

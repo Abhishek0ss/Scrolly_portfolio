@@ -90,7 +90,7 @@ const ACHIEVEMENTS = [
 export function Experience() {
 
   return (
-    <section id="certifications" className="w-full bg-[#121212] py-24 px-6 md:px-12 border-t border-white/5 relative z-20">
+    <section id="certifications" className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 border-t border-white/5 relative z-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         
         <div className="flex flex-col space-y-16">
@@ -101,7 +101,7 @@ export function Experience() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-4 mb-10">
-              <BookOpen className="w-8 h-8 text-blue-400" />
+              <BookOpen className="w-8 h-8 text-blue-300" />
               <h3 className="text-3xl font-black text-white tracking-tighter uppercase">Training</h3>
             </div>
             
@@ -112,14 +112,14 @@ export function Experience() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:bg-white/[0.04] hover:border-blue-500/50 transition-all group"
+                  className="block p-6 rounded-2xl bg-[#1f1f23] border border-white/10 hover:bg-white/[0.04] hover:border-blue-500/50 transition-all group"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-xl bg-white/5 p-2 flex items-center justify-center border border-white/10 overflow-hidden">
                       <Image src={item.logo} alt={item.provider} width={40} height={40} className="object-contain" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors flex items-center gap-2">
+                      <h4 className="text-xl font-bold text-white tracking-tight group-hover:text-blue-300 transition-colors flex items-center gap-2">
                         {item.title}
                         <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </h4>
@@ -129,7 +129,7 @@ export function Experience() {
                   </div>
                   <ul className="space-y-2 mt-4 ml-16">
                     {item.details.map((detail, dIdx) => (
-                      <li key={dIdx} className="text-zinc-400 text-sm leading-relaxed list-disc list-inside">
+                      <li key={dIdx} className="text-zinc-200 text-sm leading-relaxed list-disc list-inside">
                         {detail}
                       </li>
                     ))}
@@ -181,7 +181,7 @@ export function Experience() {
         {/* Right Column: Certifications with Running Animation */}
         <div className="flex flex-col h-full max-h-[800px]">
           <div className="flex items-center gap-4 mb-10">
-            <Award className="w-8 h-8 text-cyan-400" />
+            <Award className="w-8 h-8 text-cyan-300" />
             <h3 className="text-3xl font-black text-white tracking-tighter uppercase">Certifications</h3>
           </div>
           
@@ -223,9 +223,9 @@ export function Experience() {
                     </div>
                     <h4 className="text-base font-bold text-white truncate group-hover/item:text-cyan-300 transition-colors flex items-center gap-2">
                       {item.title}
-                      <ExternalLink className="w-3 h-3 text-cyan-400" />
+                      <ExternalLink className="w-3 h-3 text-cyan-300" />
                     </h4>
-                    <p className="text-xs text-zinc-400 mt-0.5">
+                    <p className="text-xs text-zinc-200 mt-0.5">
                       Issued by <span className="text-zinc-200">{item.provider}</span>
                     </p>
                   </div>

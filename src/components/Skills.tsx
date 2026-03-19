@@ -25,7 +25,7 @@ export function Skills() {
     <section id="skills" className="w-full bg-[#121212] py-24 px-6 md:px-12 relative z-20">
       <div className="max-w-7xl mx-auto">
         <h3 className="text-4xl md:text-5xl font-black text-white mb-16 tracking-tighter uppercase border-b border-white/20 pb-6">
-          Core <span className="text-zinc-600">Competencies</span>
+          Core <span className="text-zinc-300">Competencies</span>
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -45,7 +45,7 @@ export function Skills() {
                 {category.skills.map((skill, sIdx) => (
                   <li 
                     key={sIdx}
-                    className="px-3 py-1.5 bg-zinc-800 border border-white/10 text-zinc-200 text-sm font-mono tracking-tight rounded-md hover:bg-zinc-700 hover:text-white transition-colors cursor-default"
+                    className="px-3 py-2 bg-zinc-800 border border-white/10 text-zinc-100 text-sm font-mono tracking-tight rounded-md hover:bg-zinc-700 hover:text-white transition-colors cursor-default"
                   >
                     {skill}
                   </li>

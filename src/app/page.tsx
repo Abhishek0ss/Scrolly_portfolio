@@ -21,13 +21,13 @@ export default function Home() {
       
       <div className="relative bg-[#121212] z-20">
         <About />
-        <Resume />
         <Skills />
         <Projects />
         <Experience />
         <CodingPlatforms />
         <ExtraCurricular />
         <Education />
+        <Resume />
         <Connect />
       </div>
       <Footer />

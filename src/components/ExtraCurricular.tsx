@@ -28,7 +28,7 @@ const ACTIVITIES = [
     description:
       "Contributed in Robotics and Automation Event, Development of Automated System",
     image:
-      "/Image_fqj0tfqj0tfqj0tf.png"
+      "/Robotics challenge.png"
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const ACTIVITIES = [
     description:
       "Participated in RC Extreme League, Building and Programming of RC Car, Testing and Implementation",
     image:
-      "/Image_p9e1lmp9e1lmp9e1.png"
+      "/RC Extereme.png"
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const ACTIVITIES = [
     description:
       "Attended Global Robotics Challenge, Competed in the Competition, Fun and Learning",
     image:
-      "/Image_vtiq8yvtiq8yvtiq.png"
+      "/Tech event.png"
   }
 ];
 
@@ -120,7 +120,7 @@ export function ExtraCurricular() {
     >
       <div className="max-w-7xl mx-auto">
         <h3 className="text-4xl md:text-5xl font-black text-white mb-16 tracking-tight uppercase border-b border-white/20 pb-6 text-center">
-          Beyond <span className="text-zinc-600">The Code</span>
+          Beyond <span className="text-zinc-300">The Code</span>
         </h3>
 
         <div
@@ -171,7 +171,7 @@ export function ExtraCurricular() {
                       {activity.title}
                     </h4>
 
-                    <p className="text-sm text-gray-600 leading-relaxed font-medium line-clamp-4">
+                    <p className="text-sm text-gray-900 leading-relaxed font-medium line-clamp-4">
                       {activity.description}
                     </p>
                   </div>
