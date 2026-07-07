@@ -53,5 +53,23 @@ export const PROJECTS = [
       "Designed a dynamic GUI dashboard with Tkinter, providing users with live visual feedback and health indicators for system resources.",
       "Implemented active process management controls allowing users to detect and gracefully terminate system-hogging applications on demand."
     ]
+  },
+  { 
+    id: "Inspection Agent",
+    title: "Smart Quality Inspection Agent", 
+    desc: "Quality inspection tool for improving Accuracy and Enhancing Efficiency of quality inspection process by analysing visual data and documents.",
+    category: "Agentic AI",
+    tech: "N8N, Postman, LLM",
+    year: "April 2026",
+    url: "https://github.com/Abhishek0ss/Smart-Quality-Inspection-Agent.git",
+    image: "/n8n_image.jpg",
+    client: "Internal / Research",
+    credits: "Developed by Abhishek S S",
+    info: "Smart Quality Inspection Agent is an AI-powered automation system that streamlines quality assurance by analyzing inspection data, making intelligent pass, review, or reject decisions, and automatically generating reports, notifications, and logs. It enhances inspection accuracy, reduces manual effort, and ensures faster, more consistent quality control across industries.",
+    whatIDid: [
+      "Designed and developed an AI-powered quality inspection workflow that analyzes images, documents, and reports to automate the inspection process.",
+      "Integrated intelligent decision-making to classify inspection results as Pass, Review, or Reject, triggering automated actions based on each outcome.",
+      "Built an end-to-end automation pipeline that generates inspection reports, sends email notifications, creates issue tickets, and maintains centralized logs for audit and quality tracking."
+    ]
   }
 ];
